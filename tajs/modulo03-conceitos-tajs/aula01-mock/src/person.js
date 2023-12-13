@@ -5,9 +5,29 @@ class Person{
         if(!person.cpf) throw new Error("CPF is required")
     }
 
+    static format(person){
+        const [name, ...lastName] = person.name.split(' ')
+        return{
+            cpf: person.cpf.replace(/\D/g,''),
+            name,
+            lastName: lastName.join(' ')
+        }
+    }
+
+    static save(person){
+        if(!['cpf', 'name', 'lastName'].every(prop => person[prop])){
+            throw new Error(`cannot save invalid person: ${JSON.stringify(person)}`)
+        }
+
+        // ..API, Banco de dados, Kafka...
+
+        console.log('registrado com sucesso!!', person)
+    }
+
     static process(person){
         this.validate(person);
-        console.log('Processing person...')
+        const pesonFormatted = this.format(person)
+        this.save(pesonFormatted)
         return 'ok'
     }
 
