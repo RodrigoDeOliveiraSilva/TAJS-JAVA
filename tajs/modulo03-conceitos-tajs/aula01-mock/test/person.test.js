@@ -138,7 +138,7 @@ describe("#Person Suite", () => {
       const resultSave = Person.process(MockPersonValid);
 
       //Assert
-      const expected = 'ok' 
+      const expected = 'ok'
 
       expect(resultSave).toStrictEqual(expected)
 
