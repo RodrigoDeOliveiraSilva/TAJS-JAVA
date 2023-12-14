@@ -26,7 +26,7 @@ export default class Service {
 
 
      async read() {
-          if (!(fsSync.existsSync(this.#filename))) return []
+          if (!(await fsSync.existsSync(this.#filename))) return []
 
           const lines = (await fs.readFile(this.#filename, 'utf-8'))
                .split('\n')

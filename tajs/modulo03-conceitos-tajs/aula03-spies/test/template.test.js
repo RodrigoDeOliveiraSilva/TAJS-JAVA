@@ -12,6 +12,7 @@ describe('Service Test Suite', () => {
   describe('#read -Stubs', () => {
      //Usar o beforeEach para gerar comportamentos padrões ao iniciar os testes
     beforeEach(() => {
+      
       _service = new Service({ filename })
     })
     it('should return an empty array if the file is empty', async () => {
@@ -30,6 +31,7 @@ describe('Service Test Suite', () => {
     it('should return an empty array if there is not the file', async () => {
       //Arange, Act, Assert
       //Arange - Preparar => Spies
+      _service.filename = ''
       jest.spyOn(
         fsSync,
         'existsSync'
@@ -39,10 +41,9 @@ describe('Service Test Suite', () => {
       //Assert - Verificar
       expect(result).toEqual([])
     })
-
     it('should return users without password if file contains users', async () => {
       //Arange, Act, Assert
-
+ 
       //Arrange - Preparar => Moks
       const dbData = [
         {
@@ -64,6 +65,7 @@ describe('Service Test Suite', () => {
         fsSync,
         'existsSync'
       ).mockResolvedValue(true)
+      
       // Mocked readFile, do tipo Spies
       jest.spyOn(
         fs,
