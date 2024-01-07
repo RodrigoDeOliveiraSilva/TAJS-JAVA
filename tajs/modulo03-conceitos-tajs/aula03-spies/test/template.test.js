@@ -32,7 +32,7 @@ describe('Service Test Suite', () => {
       //Arange, Act, Assert
       //Arange - Preparar => Spies
       _service.filename = ''
-      jest.spyOn(
+      jest.spyOn( 
         fsSync,
         'existsSync'
       ).mockResolvedValue(false)
@@ -84,7 +84,7 @@ describe('Service Test Suite', () => {
     })
   })
   describe('#create - Spies', () => {
-    const MOCK_HASH_PWD = 'HASHED_PWD'
+    const MOCK_HASH_PWD = 'HASHEDPWD'
     //Usar o beforeEach para gerar comportamentos padrões ao iniciar os testes
     beforeEach(() => {
       jest.spyOn(
