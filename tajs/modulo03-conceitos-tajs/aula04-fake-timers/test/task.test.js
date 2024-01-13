@@ -3,7 +3,7 @@ import Task from "../src/task.js";
 import { setTimeout } from 'node:timers/promises';
 
 describe('Task Test Suite', () => {
-  let _logMock
+  let _logMock 
   let _task
   beforeEach(() => {
     _logMock = jest.spyOn(console, console.log.name).mockImplementation()
