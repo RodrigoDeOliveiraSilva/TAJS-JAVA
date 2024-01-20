@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1704669500138" clover="3.2.0">
-  <project timestamp="1704669500138" name="All files">
-    <metrics statements="28" coveredstatements="24" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3" elements="39" coveredelements="34" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
-    <file name="task.js" path="/home/app/modulo03-conceitos-tajs/aula05-fake-timers/src/task.js">
+<coverage generated="1705722432357" clover="3.2.0">
+  <project timestamp="1705722432357" name="All files">
+    <metrics statements="37" coveredstatements="33" conditionals="9" coveredconditionals="8" methods="4" coveredmethods="4" elements="50" coveredelements="45" complexity="0" loc="37" ncloc="37" packages="1" files="2" classes="2"/>
+    <file name="person.js" path="/home/app/modulo03-conceitos-tajs/aula05-code-covarage/src/person.js">
+      <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+    </file>
+    <file name="task.js" path="/home/app/modulo03-conceitos-tajs/aula05-code-covarage/src/task.js">
       <metrics statements="28" coveredstatements="24" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
       <line num="2" count="1" type="stmt"/>
